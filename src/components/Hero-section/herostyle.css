@@ -1,0 +1,54 @@
+.hero{
+    width:100%;
+    height:80vh;
+    background-image:linear-gradient(rgba(6,3,20,0.3),rgba(6,3,20,0.3));
+    position: relative;
+    padding: 0 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.content{
+    text-align: center;
+
+}
+.content p{
+    font-size: 20px;
+    color: white;
+}
+.content h1{
+    /* font-size: 80px; */
+    /* color: gold; */
+    font-weight: 700;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background: linear-gradient(to right,#f32170, #ffbe0b, #ff6b35,#9ef01a);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+
+}
+ /* .content h1:hover{
+    -webkit-text-stroke:2px white ;
+    color: transparent;
+ } */
+
+.back-video{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    object-fit: cover;
+}
+@media (min-aspect-ratio:16/9){
+    .back-video{
+        width: 100%;
+        height: auto;
+
+    }
+}
+@media (max-aspect-ratio:16/9){
+    .back-video{
+        width: auto;
+        height: 100%;
+        
+    }
+}
